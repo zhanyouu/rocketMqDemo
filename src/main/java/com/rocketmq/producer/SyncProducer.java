@@ -15,7 +15,7 @@ public class SyncProducer {
             producer.setSendMsgTimeout(1000000);
             // 启动Producer实例
             producer.start();
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 10; i++) {
                 // 创建消息，并指定Topic，Tag和消息体
                 Message msg = new Message("TopicTest" /* Topic */,
                         "TagA" /* Tag */,
